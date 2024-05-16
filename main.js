@@ -56,7 +56,7 @@ function Fish(){
 	speed-= 1;
 	const fishElement = document.createElement("img");
 	fishElement.id = "fish";
-	fishElement.src = "./images/fish.gif";
+	fishElement.src = "fish.gif";
 	document.body.append(fishElement);
 
 	var fish = fishElement;
