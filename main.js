@@ -19,31 +19,8 @@ var hasStarted = false;
 var score = 0;//current score of game
 //must write scorebard saved to a text doc
 startDiv();
-/*bootOrFish();
-var fishGame = setInterval(() => {bootOrFish();
-	timeVar = timeVar - 50;
-	
-}, timeVar);
-
-document.body.onkeydown = function(e) {
-	if(!fired) {
-        fired = true;
-		if (e.key == " ") {
-			reel();
-		}
-	}
-  
-}
-
-document.body.onkeyup = function(e) {
-  if (e.key == " ") {
-	fired = false;
-    slack();
-  }
-}
-*/
 function reel(){ //animation of hook going up
-	document.getElementById('fisherman').src= "./images/fisherman2.png";
+	document.getElementById('fisherman').src= "fisherman2.png";
 	//change animation of hook to going up
 	clearInterval(start);
 	if(downExists)
@@ -53,7 +30,7 @@ function reel(){ //animation of hook going up
 }
 
 function slack(){ //animation of hook going down
-	document.getElementById('fisherman').src= "./images/fisherman1.png";
+	document.getElementById('fisherman').src= "fisherman1.png";
 	
 	clearInterval(up);
 	downExists = true;
@@ -122,7 +99,7 @@ function Boot(){
 	speed-= 1;
 	const bootElement = document.createElement("img");
 	bootElement.id = "boot";
-	bootElement.src = "./images/boot.png";
+	bootElement.src = "boot.png";
 	document.body.append(bootElement);
 
 	var boot = bootElement;
